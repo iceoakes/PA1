@@ -1,17 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 
-int nCrypt(int x,int y, int z);
+
 
 int main(void)
 {
-    int a,b,c;
+    int a,b;
+    char d[200];
+    char c;
     
-    printf("hello, please enter a number: ");
+    printf("Enter a letter or phrase (UPPERCASE only) to encrypt this: ");
+    scanf("%c",&c);
     
-    a = 
-
+    c = c - 65; //Converts ASCII starting from 0 to 25
     
+    printf("%c",c);
     return 0;
     
 }
+
