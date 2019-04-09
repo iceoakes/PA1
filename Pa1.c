@@ -9,9 +9,9 @@ int main(void)
     int a,b;
    // char d[]= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    
-    char d[]= "";
+    char d[]= "Im good";
     char c = 'a';
-    int key = 5; 
+    int key = 1; 
    
     //printf("Enter a letter to encrypt: ");
    
@@ -20,7 +20,7 @@ int main(void)
     int counter = 0; 
     
     
-    for(counter  = 0; counter<; counter++)
+    for(counter  = 0; counter<d[counter]; counter++)
     {
         d[counter] = d[counter] + key; 
     }
