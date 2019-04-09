@@ -15,13 +15,13 @@ int main(void)
    
      printf("Enter a letter to encrypt: ");
    
-     scanf(" %[^\n]s", d);
+     scanf(" %[^\n]s", d); //[^\n] ignores space
     
     int counter = 0; 
     
-    for(counter  = 0; counter<d[counter]; counter++)
+    for(counter  = 0; counter<d[counter]; counter++) //for loop dependent on how many characters the user enters
     {
-        if(d[counter]!=32)
+        if(d[counter]!=32) //condition for the ASCII code to ignore the space character
         d[counter] = d[counter] + key; 
     }
     
