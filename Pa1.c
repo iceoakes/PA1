@@ -9,7 +9,7 @@ int main(void)
     int a,b;   
     char d[150];
     char c = 'a';
-    int key = 10; 
+    int key = 10; //fix later
    
      printf("Enter a letter to encrypt: ");
    
