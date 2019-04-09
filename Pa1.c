@@ -9,19 +9,19 @@ int main(void)
     int a,b;
    // char d[]= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    
-    char d[]= "Im good";
+    char d[150];
     char c = 'a';
     int key = 1; 
    
-    //printf("Enter a letter to encrypt: ");
+     printf("Enter a letter to encrypt: ");
    
-    //scanf("%c", &c);
+     scanf(" %[^\n]s", d);
     
     int counter = 0; 
     
-    
     for(counter  = 0; counter<d[counter]; counter++)
     {
+        if(d[counter]!=32)
         d[counter] = d[counter] + key; 
     }
     
