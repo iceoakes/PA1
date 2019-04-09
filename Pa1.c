@@ -6,23 +6,22 @@ int dCrypt(int x,int y);
 
 int main(void)
 {
-    int a,b;
-   // char d[]= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-   
+    int a,b;   
     char d[150];
     char c = 'a';
-    int key = 1; 
+    int key = 10; 
    
      printf("Enter a letter to encrypt: ");
    
-     scanf(" %[^\n]s", d); //[^\n] ignores space
+     scanf(" %[^\n]s", d); //[^\n] ignores the whitespace
     
     int counter = 0; 
     
     for(counter  = 0; counter<d[counter]; counter++) //for loop dependent on how many characters the user enters
     {
         if(d[counter]!=32) //condition for the ASCII code to ignore the space character
-        d[counter] = d[counter] + key; 
+        d[counter] = ((d[counter]-65) + key)%26 + 65;
+        //else if (d[counter] == );
     }
     
     printf("%s\n", d); 
