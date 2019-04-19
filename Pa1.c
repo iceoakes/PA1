@@ -9,7 +9,7 @@ int main(void)
     int a,b;   
     char d[150];
     char c = 'a';
-    int key = 10; //fix later
+    int key = 19; //fixed for small letters correctly turned into big letters
    
      printf("Enter a letter to encrypt: ");
    
@@ -21,7 +21,6 @@ int main(void)
     {
         if(d[counter]!=32) //condition for the ASCII code to ignore the space character
         d[counter] = ((d[counter]-65) + key)%26 + 65;
-        //else if (d[counter] == );
     }
     
     printf("%s\n", d); 
