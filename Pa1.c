@@ -2,8 +2,16 @@
 #include <string.h>
 #include <ctype.h>
 
-int nCrypt(int x,int y);
-int dCrypt(int x,int y);
+int nCrypt(char d[],char y){
+    for(int i=0; i <26; i++){
+        if(d[i] == y){
+            return i;
+    }
+}
+return -1;
+}
+
+char sub[26] = {'Q','A','Z','X','S','W','E','D','C','V','F','R','T','G','B','N','H','Y','U','J','M','K','I','L','O','P'}; //defined letters for substitution cipher
 
 int main(void)
 {
@@ -67,7 +75,7 @@ int main(void)
     break;
     
         case 3:
-
+    //substitution cipher
     return 0;
     
 }
