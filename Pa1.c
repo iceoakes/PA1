@@ -51,7 +51,7 @@ int main(void)
         
     } 
     
-    printf("%s\n", d);
+    printf("%s\n", d); //prints out the encrypted string
     break;
     
         case 2:
@@ -69,7 +69,7 @@ int main(void)
     for(counter  = 0; counter < d[counter]; counter++) //a "for loop" that is dependent on how many characters the user enters
     {
             if(d[counter]!=32) //condition for the ASCII code to ignore the space character
-            d[counter] = ((d[counter]+65) - key)%26 +65;
+            d[counter] = ((d[counter]+65) - key)%26 +65; //decryption calculation
     }
     printf("%s\n",d);
     break;
