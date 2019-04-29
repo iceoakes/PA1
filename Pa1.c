@@ -14,7 +14,7 @@ char sub[26] = {'Q','A','Z','X','S','W','E','D','C','V','F','R','T','G','B','N',
 int main(void)
 {
     int a;
-    char d[150];
+    char d[500];
     int key = 25; 
     int i=0;
      
@@ -46,7 +46,7 @@ int main(void)
     
     for(counter  = 0; counter < d[counter]; counter++) //a "for loop" that is dependent on how many characters the user enters
     {
-             if(d[counter]!=32) //condition for the ASCII code to ignore the space character
+             if(d[counter]!=32 && d[counter] !=46) //condition for the ASCII code to ignore the space character
              d[counter] = ((d[counter]-65) + key)%26 + 65; //calculation to provide encoded letters shifted by 1 to the right
         
     } 
@@ -68,7 +68,7 @@ int main(void)
         //Decryption process
     for(counter  = 0; counter < d[counter]; counter++) //a "for loop" that is dependent on how many characters the user enters
     {
-            if(d[counter]!=32) //condition for the ASCII code to ignore the space character
+            if(d[counter]!=32 && d[counter] !=46) //condition for the ASCII code to ignore the space character
             d[counter] = ((d[counter]+65) - key)%26 +65; //decryption calculation
     }
     printf("%s\n",d);
