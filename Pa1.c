@@ -31,7 +31,7 @@ int main(void)
      
      switch(a){
         case 1: //when the user enters a 1.
-         printf("Enter a phrase to encrypt:");
+         printf("Enter a phrase to encrypt not more than 26 letters:");
          scanf(" %[^\n]s", d);//[^\n] ignores the whitespace
          
      //for loop that converts lowercase letters into uppercase
@@ -55,7 +55,7 @@ int main(void)
     break;
     
         case 2:
-          printf("Enter a phrase to decrypt:");
+          printf("Enter a phrase to decryptnot more than 26 letters:");
           scanf(" %[^\n]s", d);//[^\n] ignores the whitespace
           
      //for loop that converts lowercase letters into uppercase
